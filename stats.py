@@ -15,9 +15,7 @@ def count_chars (text_input):
     chars_dict = {}
     for word in words:
         word = word.lower()
-        # use list() method to split word into characters
-        chars_in_word = list(word)
-        for char in chars_in_word:
+        for char in word:
             if char in chars_dict:
                 chars_dict[char] += 1
             else:
